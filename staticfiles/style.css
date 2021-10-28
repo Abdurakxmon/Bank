@@ -1,0 +1,115 @@
+*{
+	font-family: 'Zen Kurenaido', sans-serif;
+	padding: 0px;
+	margin: 0px;
+}
+.btn1{
+	float: right;
+}
+header{
+	width: 100%;
+	height: 100vh;
+}
+
+.div{
+	width: 100%;
+	height: 100vh
+}
+#navbar{
+	height: 10vh;
+}
+
+
+.carouse1{
+	width: 100%;
+	height: 90vh;
+	margin-top: 10vh;
+}
+.carouse1 img{
+	height: 90vh;
+}
+#coruse11{
+	width: 100%;
+	height: 90vh;
+	background-image: url('img/background1.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+#coruse12{
+	width: 100%;
+	height: 90vh;
+	background-image: url('img/background2.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+#coruse13{
+	width: 100%;
+	height: 90vh;
+	background-image: url('img/background3.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+}.nasa{
+	width: 100%;
+	height: 100vh;
+}
+.table1{
+	margin-top: 15vh;
+}
+.misol{
+	display: inline-block;
+	border-radius: 50%;
+	border: 1px solid;
+	padding: 5px 15px;
+}
+p{
+	font-size: 20px;
+}
+a{
+	text-decoration: none;
+	color: black;
+}
+.container1{
+	width: 60%;
+	margin: 150px auto 0  ;
+}
+.container2{
+	width: 90%;
+	margin: 150px auto 0  ;
+	
+	display: flex;
+	justify-content: space-around;
+}
+.info{
+	width: 40%;
+	padding: 30px ;
+}
+.ssss{
+	width: 40%;
+}
+.aa{
+	margin-top: 30px;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+}
+.aaa{
+	display: inline-block;
+}
+
+.hello{
+	position: absolute;
+	top: 50%;
+	left: 75%;
+}
+.hee{
+	position: absolute;
+	top: 150%;
+	width: 200px;
+}
+.formulalar{
+
+	height: 100vh;
+}
+.iimmgg{
+	width: 100%;
+}

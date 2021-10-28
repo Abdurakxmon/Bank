@@ -1,0 +1,35 @@
+{% load static %}
+{% block content %}
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Misol</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+</head>
+<body>
+
+
+<div class="container mt-5">
+     <form method="POST">
+
+         {% csrf_token %}
+          <br>
+          <span>Dastlabki olingan qarz miqdori* </span><input class="form-control" name="b" type="number" min="0" aria-label="readonly input example" value={{c}}><br>
+          <span>Yakuniy balans* </span><input class="form-control" name="c" type="number" min="0" aria-label="readonly input example" value={{r}}><br>
+          <span>Yillar soni* </span><input class="form-control" name="d" type="text" min="0" aria-label="readonly input example" value={{n}}><br>
+          <span>Bir yilda necha marta bolib to`lanishi  * </span><input class="form-control" name="e" type="number" min="0" aria-label="readonly input example" value={{k}}><br>
+          <input type="submit" class="btn btn-primary btn1" value="Hisoblash" ></input>
+          {% if mes %}
+          <h1>{{mes}}%</h1>
+          {% endif %}
+        </form>
+
+  </div>
+
+
+
+</body>
+</html>
+{% endblock %} 

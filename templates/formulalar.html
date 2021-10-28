@@ -1,0 +1,103 @@
+{% load static %}
+{% block content %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Liyiha ishi</title>
+  <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Kurenaido&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+     <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  
+</head>
+<body>
+<header>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top " id="navbar" >
+  <div class="container-fluid animate__animated animate__bounceInRight">
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link " href="/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="{% url 'algebra:formulalar' %}">Formulalar</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'algebra:misollar' %}">Misollar</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="{% url 'algebra:about' %}">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="{% url 'algebra:hisob' %}">Hisoblash</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="{% url 'algebra:faq' %}">FAQs</a>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+<div class="container1">
+  <img src="{% static '45848c61d66fac6947cef3c3c8040d02.jpg' %}" class="formulalar animate__animated animate__backInDown">
+	
+<h1 class="text-center">Formulalar</h1><br>
+<h2 >  Sodda foiz hisoblash formulasi: </h2><br>
+<img src="{% static 'i.png' %}"><br>
+  <h3>I = Kreditor tomonidan olingan daromad</h3>
+  <h3>C = Dastlabki qoyilgan summa/olingan kredit miqdori</h3>
+  <h3>r = Foiz stavka</h3>
+  <h3>n = Yillar soni</h3>
+
+  <br>
+  <hr>
+  <br>
+<h2>Murakkab foiz hisoblash formulasi:</h2><br>
+<p>Agar k bo`lmasa:</p>
+<img src="{% static 'A.png' %}"><br>
+<p>Agar k bo`lsa:</p>
+<img src="{% static 'Ak.png' %}"><br>
+  <h3>A = Yakuniy balans</h3>
+  <h3>C = Dastlabki qoyilgan summa/olingan kredit miqdori</h3>
+  <h3>r = Foiz stavka</h3>
+  <h3>n = Yillar soni</h3>
+  <h3>k = Bir yilda necha qishmga bo`linib to`lanishi</h3>
+  <hr>
+  <br>
+  <h1>I = A - C</h1><br>
+  <h3>I = Kreditor tomonidan olingan daromad</h3>
+  <h3>A = Yakuniy balans</h3>
+  <h3>C = Dastlabki qoyilgan summa/olingan kredit miqdori</h3>
+
+
+
+<div class="container">
+  <footer class="py-3 my-4">
+    <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+      <li class="nav-item"><a href="/" class="nav-link px-2 text-muted">Home</a></li>
+      <li class="nav-item"><a href="{% url 'algebra:formulalar' %}" class="nav-link px-2 text-muted">Formulalar</a></li>
+      <li class="nav-item"><a href="{% url 'algebra:misollar' %}" class="nav-link px-2 text-muted">Misollar</a></li>
+      <li class="nav-item"><a href="{% url 'algebra:faq' %}" class="nav-link px-2 text-muted">FAQs</a></li>
+      <li class="nav-item"><a href="{% url 'algebra:about' %}" class="nav-link px-2 text-muted">About</a></li>
+    </ul>
+  </footer>
+</div>
+  </div>
+</div>
+</body>
+</html>
+{% endblock %} 

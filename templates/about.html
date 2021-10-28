@@ -1,0 +1,102 @@
+{% load static %}
+{% block content %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>About</title>
+  <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+   <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Kurenaido&display=swap" rel="stylesheet">
+  
+</head>
+<body>
+  <img src="{% static 'images.jpeg' %}" class="hello">
+    <img src="{% static 'a.jpg' %}" class="hee">
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top " id="navbar" >
+  <div class="container-fluid animate__animated animate__bounceInRight">
+  
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'algebra:formulalar' %}">Formulalar</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'algebra:misollar' %}">Misollar</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="{% url 'algebra:about' %}">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="{% url 'algebra:hisob' %}">Hisoblash</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="{% url 'algebra:faq' %}">FAQs</a>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+Foizlar ikki xil bo’ladi: sodda va murakkab foizlar. Sodda foizlar Oddiy foizlar-kreditorni qarzdozga ma’lum miqdordagi pulni belgilangan muddatda qarzga berganligi nat
+<div class="container1">
+  <h1 class="text-center animate__animated animate__flip">Foizlar</h1>
+  <hr>
+  <p class="animate__animated animate__lightSpeedInLeft animate__delay-1s">Foizlar ikki xil bo’ladi:  <br>
+     <font color="red" size="5" > 1. Oddiy foizlar</font> <br>
+    <font color="blue" size="5" > 2. Murakkab foizlar</font>
+  </p>
+  <p class="animate__animated animate__lightSpeedInRight animate__delay-2s"><b>Asosiy summa</b> deganda qarzga yoki foyda-lanishga olingan yoki investitsiya qilingan va foiz hisoblanishi zarur bo’lgan summa tushuniladi.</p>
+  <p class="animate__animated animate__lightSpeedInLeft animate__delay-3s"><font color="red" size="5" >Oddiy foiz</font> deganda - doimiy (o’zgarmas) asosiy summaga ko’paytiriladigan foiz stavkasi tushuniladi.</p>
+  <p class="animate__animated animate__lightSpeedInRight animate__delay-4s"><strong>Dastavval oddiy foizlar haqida.</strong> Faraz qilaylik Siz 200,0 ming so’mdan iborat o’z mablag’ingizni «Хalq banki»ga qat’iy belgilangan 20,0 foizlik stavkada 3 yil muddatga qo’ydingiz. Bunda hisoblangan yillik foizlar asosiy summaga qo’shilmaydi, balki har yili Sizga berilib boradi deb hisoblaylik. U holda bir yildan keyin Siz qo’yilmangiz uchun 40,0 ming so’m miqdorda foiz daromadi ola-siz va kelgusi yillarda ham xuddi shunday yiliga 40,0 ming so’mdan olib borasiz va 3 yildan keyin sizning foiz ko’rinishidagi daromadingiz 120,0 ming so’mni, umumiy pul mablag’ingizning qiymati esa 320,0 ming so’mga etadi.</p>
+  <br>
+  <br>
+  <p><font color="blue" size="5" >Murakkab foizlar</font> - o’zgaruvchan asosiy summaga ko’paytiriladigan foiz stavkasi tushuniladi.</p>
+  <p><b>Murakkab foizlar</b>ni hisoblash oddiy foizlarni hisoblashdan farq qiladi va bu farq asosan foiz hisoblanuvchi (asosiy) summani o’zgarib borishidir. Bunda asosiy summa har yili olingan foiz to’lovi hisobiga ortib boradi. Masalan, yuqoridagi misolda <b>Asosiy summa</b> o`zgarmas va har gal osha asosiy summaning 20% ni qoshib ketyabmiz.</p>
+  <br>
+  <p>Ammo <b>Murakkab foizlar</b>da bunday bo`lmaydi <b>Asosiy summa</b> o`zgaruvchan bo`ladi. Masalan:</p>
+  <p><b>Murakkab foizlar</b>da yuqoridagi masala berilgan bosin deylik. Bunda birinchi yili <b>Asosiy summa</b> 200.00 ming som bo`ladi bir yildan song 20% qoshiladi va 2-yilga <b>Asosiy summa</b> 240.00 ming somga teng bo`ladi. 2-yili ham <b>Asosiy summani</b> yani(240 ming)ni 20%ni qoshamiz va 288.00 ming som hosil boladi va 3-yili ham 288.00 mingning 20%ni qoshsak jami pul 345.6 mig som hosil bo`ladi.</p>
+  <br>
+  <br>
+  <div class="alert alert-info" role="alert">
+    <strong>!  </strong> Bundan kelib chiqadiki agar siz bankga pul qoysangiz murakkab foizda qo`yganingiz yaxshi agar kredit omoqchi bo`lsangiz oddiy foizda.
+  </div>
+
+  <div class="alert alert-danger" role="alert">
+    <strong>Murakkab foiz </strong>va<strong> Sodda foiz</strong>larning asosiy farqi Asosiy summaning o'zgarishi va o'zgarmasligida.
+  </div>
+</div>
+
+  </div>
+  <div class="container">
+  <footer class="py-3 my-4">
+    <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+      <li class="nav-item"><a href="/" class="nav-link px-2 text-muted">Home</a></li>
+      <li class="nav-item"><a href="{% url 'algebra:formulalar' %}" class="nav-link px-2 text-muted">Formulalar</a></li>
+      <li class="nav-item"><a href="{% url 'algebra:misollar' %}" class="nav-link px-2 text-muted">Misollar</a></li>
+      <li class="nav-item"><a href="{% url 'algebra:faq' %}" class="nav-link px-2 text-muted">FAQs</a></li>
+      <li class="nav-item"><a href="{% url 'algebra:about' %}" class="nav-link px-2 text-muted">About</a></li>
+    </ul>
+  </footer>
+</div>
+</body>
+</html>
+{% endblock %}

@@ -1,0 +1,112 @@
+{% load static %}
+{% block content %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>FAQs</title>
+		<link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Kurenaido&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top " id="navbar" >
+  <div class="container-fluid animate__animated animate__bounceInRight">
+    
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link " href="/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'algebra:formulalar' %}">Formulalar</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'algebra:misollar' %}">Misollar</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="{% url 'algebra:about' %}">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="{% url 'algebra:hisob' %}">Hisoblash</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="{% url 'algebra:faq' %}">FAQs</a>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+<div class="container2 ">
+	<div class="info">
+              <div class="address">
+                <i class="bi bi-geo-alt"></i>
+                <h4>Location:</h4>
+                <p>Al Khorezmi School of Information Technology, Toshkent, Uzbekistan</p>
+              </div>
+
+              <div class="email">
+                <i class="bi bi-envelope"></i>
+                <h4>Email:</h4>
+                <p>misterlider2006@gmail.com</p>
+              </div>
+              <div class="phone">
+                <i class="bi bi-phone"></i>
+                <h4>Call:</h4>
+                <p>+998 94 469 99 66</p>
+              </div>
+
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2997.2724285493423!2d69.31636075453964!3d41.302936731520795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38aef5378726fbaf%3A0x2d84fd21efda8919!2sAl%20Xorazmiy%20nomidagi%20Axborot%20Texnologiyalari%20Maktabi!5e0!3m2!1sru!2str!4v1632930117433!5m2!1sru!2str" width="100%" height="290px" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+	<div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch ssss">
+            <form action="" method="post" role="form" class="php-email-form">
+
+              <input type="hidden" name="csrfmiddlewaretoken" value="OseYwCmhckoJl4sx6AmWaOgwYdsXWVPRcrFFApazW1KDpLDMsyuhIh53dQfWzDxQ">
+              <div class="row">
+                <div class="form-group col-md-6">
+                  <label for="name">Your Name</label>
+                  <input type="text" name="name" class="form-control" id="name" required="">
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="name">Your Email</label>
+                  <input type="email" class="form-control" name="email" id="email" required="">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="name">Subject</label>
+                <input type="text" class="form-control" name="subject" id="subject" required="">
+              </div>
+              <div class="form-group">
+                <label for="name">Message</label>
+                <textarea class="form-control" name="message" rows="10" required=""></textarea>
+              </div>
+              <div class="text-center bg"><input src="/" type="submit" value="Send Message" class="bg-info aa"></div>
+            </form>
+          </div>
+</div>
+</div>
+</div>
+<div class="container">
+  <footer class="py-3 my-4">
+    <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+      <li class="nav-item"><a href="/" class="nav-link px-2 text-muted">Home</a></li>
+      <li class="nav-item"><a href="{% url 'algebra:formulalar' %}" class="nav-link px-2 text-muted">Formulalar</a></li>
+      <li class="nav-item"><a href="{% url 'algebra:misollar' %}" class="nav-link px-2 text-muted">Misollar</a></li>
+      <li class="nav-item"><a href="{% url 'algebra:faq' %}" class="nav-link px-2 text-muted">FAQs</a></li>
+      <li class="nav-item"><a href="{% url 'algebra:about' %}" class="nav-link px-2 text-muted">About</a></li>
+    </ul>
+  </footer>
+</div>
+</body>
+</html>
+{% endblock %} 
